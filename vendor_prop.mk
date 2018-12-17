@@ -113,10 +113,20 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.sys.fw.bservice_enable=true
 
+# Memory
+PRODUCT_PROPERTY_OVERRIDES += \
+	dalvik.vm.heapmaxfree=8m \
+	dalvik.vm.heapminfree=4m \
+	dalvik.vm.heapsize=512m \
+	dalvik.vm.heapstartsize=16m \
+	dalvik.vm.heaptargetutilization=0.75
+
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=libqti-perfd-client.so \
-    ro.vendor.qti.sys.fw.bg_apps_limit=60
+    ro.vendor.qti.sys.fw.bg_apps_limit=60 \
+    ro.vendor.qti.sys.fw.bservice_limit=5 \
+    ro.vendor.qti.sys.fw.bservice_age=5000
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
