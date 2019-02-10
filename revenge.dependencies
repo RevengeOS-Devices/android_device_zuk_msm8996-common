@@ -1,0 +1,18 @@
+[
+  {
+    "remote"     : "github",
+    "repository" : "teamfirangi/kernel_bubblewrap_4.4",
+    "target_path": "kernel/zuk/msm8996",
+    "revision"    : "hmp"
+  },
+  {
+    "remote"     : "github",
+    "repository" : "RevengeOS-Devices/android_vendor_zuk_z2_plus",
+    "target_path": "vendor/zuk"
+  }
+]
+
+
+
+
+
